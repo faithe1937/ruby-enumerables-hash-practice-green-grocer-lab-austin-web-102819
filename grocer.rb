@@ -40,5 +40,7 @@ def checkout(cart, coupons)
   cart1 = apply_coupons(carts,coupons)
   cart2 = apply_clearance(cart1)
   total = 0 
-  cart.each d
+  
+  cart.each do |name, price_hash|
+    total += price_hash[:price]
 end
