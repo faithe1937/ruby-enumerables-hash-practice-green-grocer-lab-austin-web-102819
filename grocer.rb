@@ -11,7 +11,11 @@ receipt_hash
 end 
 
 def apply_coupons(cart, coupons)
-  # code here
+  coupons.each do |coupon|
+    item = coupon [item]
+    
+    if cart[item]
+      if cart[item][:count] >= coupon [:num] &&! cart["#{item} w/coupon"]
 end
 
 def apply_clearance(cart)
